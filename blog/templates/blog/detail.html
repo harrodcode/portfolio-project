@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Album example for Bootstrap</title>
+    <title>{{ blog.title }}</title>
 
     <!-- Bootstrap core CSS -->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -37,38 +37,19 @@
   </header>
 
     <main role="main">
+    	<div class="container">
+		   			
+			 <h1 class="text-center pt-3">{{blog.title}}</h1>
+			 <p class="text-center">{{blog.pub_date_pretty}}</p>
+			 <img class ="img-fluid" src="{{ blog.image.url }}"  />
+			 <br />
+			 <br />
+			 <p>{{blog.body}}</p>
+			 <br />
 
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Hello I'm Bayley</h1>
-          <p class="lead text-muted">Hey my name is Bayley Harrod and this website is showcasing my skills and a hub for my Bayta Youtube channel.</p>
-          <p>
-            <a href="mailto:bayleyhbusiness@hotmail.com" class="btn btn-primary my-2">Contact me</a>
-          </p>
-        </div>
-      </section>
+		
 
-      <div class="album py-5 bg-light">
-        <div class="container">
-
-          <div class="row">
-
-            {% for job in jobs.all %} 
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" src="{{ job.image.url }}" />
-                <div class="card-body">
-                  <p class="card-text">{{ job.summary }}</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                  </div>
-                </div>
-              </div>
-            </div>
-            {% endfor %}
-
-        </div>
-      </div>
-
+    	</div>
     </main>
 
     <footer class="text-muted">
