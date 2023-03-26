@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-{% load staticfiles %}
+{% load static %}
 
   <head>
     <meta charset="utf-8">
@@ -42,11 +42,9 @@
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Hello I'm Bayley</h1>
-          <img src="{% static 'bayta.jpg' %}" height="300" class="rounded-circle" />
-          <p class="lead text-muted"> The purpose of this website is to showcase my previous work experience, skills and a place for me to document my current projects. 
-            <br />
-     
-             I have built this website entirely from scratch using Python and the Django 2.0.2 webframework.</p>
+          <img src="{% static 'headshot_2023.jpg' %}" height="500"  />
+          <p class="lead text-muted"> Currently, a Product Manager at Moneybox. Taking my passion for personal finance and interest fintech to create seamless experiences for Moneybox's 1m+ customers. Focusing on the open banking and payments ecosystem to create better products for our customers.
+          </p>
           <p>
             <a href="mailto:bayleyhbusiness@hotmail.com" class="btn btn-primary my-2">Email me</a>
           </p>
