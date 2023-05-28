@@ -25,9 +25,10 @@
   <body>
 
   <header>
-    <section class="jumbotron text-center bg-image" style="background-image: url('{% static 'headshot_2023.jpg' %}'); background-position: center; background-size: cover; height: 1000px; "> 
-      <div class="container">  
-        <nav class="navbar navbar-expand-lg navbar-dark ">
+    <!-- <section class="jumbotron text-center bg-image" style="background-image: url('{% static 'headshot_2023.jpg' %}'); background-position: center; background-size: cover; height: 1000px; "> -->
+    <section class="jumbotron text-center " style="background-image: url('{% static 'headshot_2023.jpg' %}'); background-position: center; background-size: cover; height: 1000px; ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
             <a class="navbar-brand fs-1" href="{% url 'home' %}">Bayley Harrod</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -43,8 +44,9 @@
                 <a href="mailto:bayleyhbusiness@hotmail.com?subject=BayleyHarrod.com Contact" class=" btn btn-outline-light bg-transparent fs-4">Contact</a>
               </div>
             </div>
+          </div>
         </nav>
-      </div>      
+            
     </section>
   </header>
 
@@ -54,7 +56,7 @@
       <br />
       <br />
       <br />
-      <section class="container text-center col-8">
+      <section class="container text-center col-lg-8">
         <div class="container">
           <h1 class="fs-1">Product Management & Agile Coaching</h1>
           <p class="lead text-muted text-start">I have built dozens of digital products from idea conception to launch and scale -  delivering experiences that delight customers and drive business outcomes. From building the ‘Uber’ of home repairs to scaling Moneybox’s instant payment mechanisms to millions of customers.
@@ -86,7 +88,7 @@
             </div>
             
             <!-- Previous work button -->
-            <div class='d-grid col-4 mx-auto'>
+            <div class='d-grid col-lg-4 mx-auto'>
               <a href="https://bayleyharrod.notion.site/bayleyharrod/Bayley-Harrod-4ba2aa3b7fd94ad48c2d16ef59cf338b" target="_blank" class=" btn btn-dark fs-4">Previous Work</a>
             </div>
               
@@ -99,7 +101,7 @@
       <!-- Prduct 30 section-->
       
       <div class="album py-5 bg-secondary">
-        <div class="container text-center col-8">
+        <div class="container text-center col-lg-8">
           <div class="container">
             <h1 class="text-white text-center fs-1">Product30</h1>
             <br />
@@ -119,14 +121,14 @@
       <br />
       <br />
       <section class="jumbotron text-start">
-        <div class="container text-center col-8">
+        <div class="container text-center col-lg-8">
           <div class="row">
-            <div class="col 6">
+            <div class="col-lg-6">
               <h1 class="jumbotron-heading">About Me</h1>
               <p class="lead text-muted text-start"> Currently, a Product Manager at Moneybox. Taking my passion for personal finance and interest fintech to create seamless experiences for Moneybox's 1m+ customers. Focusing on the open banking and payments ecosystem to create better products for our customers.</p>
             </div>
 
-            <div class="col 6">
+            <div class="col-lg-6">
               <img src="{% static 'wapping.jpg' %}" alt="Bayley Harrod photo" class="img-fluid rounded float-start">
             </div>
           </div>
