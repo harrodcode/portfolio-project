@@ -27,7 +27,7 @@
   <header>
     <!-- <section class="jumbotron text-center bg-image" style="background-image: url('{% static 'headshot_2023.jpg' %}'); background-position: center; background-size: cover; height: 1000px; "> -->
     <section class="jumbotron text-center " style="background-image: url('{% static 'headshot_2023.jpg' %}'); background-position: center; background-size: cover; height: 1000px; ">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container">
             <a class="navbar-brand fs-1" href="{% url 'home' %}">Bayley Harrod</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,10 +35,11 @@
               </button>
             <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto dark">
+                <a class="nav-item nav-link  fs-4" href=#work_with_me>Services</a>
                 <a class="nav-item nav-link  fs-4" href="https://bayleyharrod.notion.site/bayleyharrod/Bayley-Harrod-4ba2aa3b7fd94ad48c2d16ef59cf338b" target="_blank" >Portfolio</a>
                 <a class="nav-item nav-link  fs-4" href="https://www.linkedin.com/in/bayley-harrod/">LinkedIn</a>
                 <a class="nav-item nav-link  fs-4" href="https://open.spotify.com/show/5actaIjsSaSSjxTKwqLuYb?si=0d6849fa50674702">Podcast</a>
-                <a class="nav-item nav-link  fs-4" href=#work_with_me>Services</a>
+                
                 <!-- youtube commented out<a class="nav-item nav-link fs-4" href="https://www.youtube.com/channel/UCECHK6DJF5Fyaf5bFbrn2GA?view_as=subscriber">Youtube</a> -->
                 
                 <!-- blogs need to be fixed<a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>-->
@@ -126,7 +127,14 @@
           <div class="row">
             <div class="col-lg-6">
               <h1 class="jumbotron-heading">About Me</h1>
-              <p class="lead text-muted text-start"> Currently, a Product Manager at Moneybox. Taking my passion for personal finance and interest fintech to create seamless experiences for Moneybox's 1m+ customers. Focusing on the open banking and payments ecosystem to create better products for our customers.</p>
+              <p class="lead text-muted text-start">Currently, I am building my own product <a href="savrday.com">Savrday.com</a>, which helps people compare financial products and maximise their savings within 60 seconds. 
+                <br />
+                <br />
+                My role prior to this was as a Product Manager at Moneybox. Taking my passion for personal finance and interest in fintech to create seamless experiences for Moneybox's 1m+ customers. Focusing on developing new customer propositions and open banking to create better products for our customers.
+                <br />
+                <br />
+                Outside of work I spend most of my time in the gym, running and spending time with family.
+                </p>
             </div>
 
             <div class="col-lg-6">
@@ -161,10 +169,11 @@
             <div class="container col-lg-10" id="work_with_me">
               <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
                 <h1 class="display-4 fw-normal text-body-emphasis">Work with me</h1>
-                <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+                <p class="fs-5 text-body-secondary">Lets talk!</p>
               </div>
             </header>
           
+            <!-- Pricing
             <main>
               <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
                 <div class="col">
@@ -224,6 +233,14 @@
             </div>
 
     </main>
+    -->
+
+<!--Work with me button-->
+    <div class='d-grid col-lg-4 mx-auto'>
+      <a href="mailto:bayleyhbusiness@hotmail.com?subject=BayleyHarrod.com Contact" class=" btn btn-dark fs-4">Contact</a>
+    </div>
+
+    <br />
 
     <footer class="text-muted">
       <div class="container text-center">
