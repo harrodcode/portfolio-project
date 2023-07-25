@@ -38,9 +38,8 @@
     <!-- Mixpanel Events -->
 <script>
   //Home viewed
-  mixpanel.track("home_viewed")
+  mixpanel.track("home_viewed");
 </script>
-
   
   </head>
 
@@ -63,7 +62,7 @@
                 <a class="nav-item nav-link text-white fs-4" href=#work_with_me></a>
                 <a class="nav-item nav-link text-white fs-4" href=#work_with_me></a>
                 <a class="nav-item nav-link text-white fs-4" href=#work_with_me></a>
-                <a class="nav-item nav-link text-white fs-4" href="https://bayleyharrod.notion.site/bayleyharrod/Bayley-Harrod-4ba2aa3b7fd94ad48c2d16ef59cf338b" target="_blank" >Portfolio</a>
+                <a class="nav-item nav-link text-white fs-4" href="https://bayleyharrod.notion.site/bayleyharrod/Bayley-Harrod-4ba2aa3b7fd94ad48c2d16ef59cf338b" target="_blank" id="portfolio_link" >Portfolio</a>
                 <a class="nav-item nav-link text-white fs-4" href="https://www.linkedin.com/in/bayley-harrod/">LinkedIn</a>
                 <a class="nav-item nav-link text-white fs-4" href="https://open.spotify.com/show/5actaIjsSaSSjxTKwqLuYb?si=0d6849fa50674702">Podcast</a>
                 
@@ -78,6 +77,15 @@
             
     </section>
   </header>
+
+  <!--Mixpanel events-->
+  <script>
+    //Portfolio Clicked
+    document.getElementById("portfolio_link").addEventListener("click", function() {
+    mixpanel.track("portfolio_clicked");
+  });
+  </script>
+
 
 
 <!-- Header content -->
@@ -201,7 +209,14 @@
                 <a href="mailto:bayleyhbusiness@hotmail.com?subject=BayleyHarrod.com Contact" class=" btn btn-dark fs-4">Contact</a>
               </div>
 
-            </header>
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/bayleyhbusiness', text: 'Book an introduction call', color: '#000000', textColor: '#ffffff', branding: true }); }</script>
+<!-- Calendly badge widget end -->
+            
+            </main>
+            
           
             <!-- Pricing
             <main>
